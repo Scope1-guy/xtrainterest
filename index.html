@@ -6,7 +6,10 @@
     <title>Invest</title>
     <link rel="stylesheet" href="index.css">
     <style>
-      .markethead{
+      * {
+  box-sizing: border-box;
+}
+.markethead{
   display: flex;
   align-items: center;
   background-color: black;
@@ -894,14 +897,14 @@ footer{
 }
 
 /*media queries*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-device-width: 559px) {
   .markethead{
     height: 90px;
     width: 265%;
     z-index: 10000000;
   }
   .marketlogo img{
-    width: 20%;
+    max-width: 20%;
   }
   .marketlogo div{
     font-size: 35px;
@@ -925,26 +928,28 @@ footer{
     padding-top: 90px;
   }
   .h-img{
-    width: 70%;
+    min-width: 70%;
   }
   .icon-box{
-    margin-left: 190px;
+    margin-left: 250px;
   }
   .icon-box2{
-    margin-left: 30px;
+    margin-left: 70px;
   }
   .contacts1{
     margin-top: 20px;
     width: 180px;
     line-height: 1.8;
+    font-size: 17px;
   }
   .contacts2{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 200px;
     line-height: 1.8;
+    font-size: 17px;
   }
   .nav{
-    width: 265%;
+    width: 268%;
   }
   .nav-div{
     gap: 30px;
@@ -953,7 +958,7 @@ footer{
     font-size: 32px;
   }
   .btn{
-    margin-left: 120px;
+    margin-left: 280px;
   }
   .btn11{
     background-color: white;
@@ -987,7 +992,8 @@ footer{
     margin-bottom: 30px;
   }
   .image{
-    width: 50%;
+    max-width: 100%;
+    height: auto;
   }
   .trusted-div{
     width: 268%;
@@ -1082,16 +1088,17 @@ footer{
     font-size: 30px;
   }
   .workers{
-    width: 265%;
+    width: 268%;
   }
   .numdiv{
-    width: 265%;
+    width: 268%;
   }
   .group{
     width: 700px;
   }
   .group img{
-    width: 180%;
+    max-width: 170%;
+    height: auto;
   }
   .table{
     position: absolute;
@@ -1099,9 +1106,9 @@ footer{
     padding-top: 70px;
     padding-bottom:20px;
     padding-left: 170px;
-    top: 4100px;
-    left: 350px;
-    width: 740px;
+    top: 4000px;
+    left:400px;
+    width: 190%;
     z-index: 100000;
   }
   .testimonial{
@@ -1153,9 +1160,9 @@ footer{
     width: 265%;
   }
   .finance0{
-    width: 1000px;
-    height: 150px;
-    top: 6400px;
+    width: 250%;
+    height: 350px;
+    top: 6160px;
   }
   .finance1{
     font-size: 30px;
@@ -1167,7 +1174,7 @@ footer{
   .blogs{
     margin-top: 200px;
     width: 230%;
-    margin-left: 900px;
+    margin-left: 800px;
   }
   .blogs h2{
    font-size: 50px; 
@@ -1233,7 +1240,7 @@ footer{
     height: 60px;
   }
   footer{
-    width: 248%;
+    width: 268%;
   }
 }
 
